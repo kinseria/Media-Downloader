@@ -27,7 +27,7 @@ function getVideos(inputUrl) {
 	if (!videoId) {
 		errorMessage("Error: Couldn't find video id in provided URL. If you know the video id, try entering only 'v={videoId}'");
 	}
-	fetch(`https://cors-proxy-9001.herokuapp.com/https://youtube.com/watch?v=${videoId}`)
+	fetch(`https://corsproxy.io/?https://youtube.com/watch?v=${videoId}`)
 		.then(response => {
 		// indicates whether the response is successful (status code 200-299) or not
 			if (!response.ok) {
